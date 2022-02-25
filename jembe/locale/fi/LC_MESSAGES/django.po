@@ -1,0 +1,253 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Ville Skyttä <ville.skytta@iki.fi>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-21 20:06+0300\n"
+"PO-Revision-Date: 2015-10-26 10:25+0200\n"
+"Last-Translator: Ville Skyttä <ville.skytta@iki.fi>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fi\n"
+"X-Generator: Poedit 1.8.5\n"
+
+
+msgid "Book a table"
+msgstr "Varata pöyta"
+
+#: .\templates\contact.html:118
+#, fuzzy
+#| msgid "Home"
+msgid "Home "
+msgstr "Etusivu"
+
+#: .\templates\contact.html:121 .\templates\index.html:117
+#: .\templates\reservation.html:130
+msgid "about us"
+msgstr "Meistä"
+
+#: .\templates\contact.html:125 .\templates\index.html:121
+#: .\templates\reservation.html:134 .\templates\reservation.html:181
+msgid "Reservation"
+msgstr "Varaus"
+
+#: .\templates\contact.html:126 .\templates\index.html:122
+#: .\templates\index.html:325 .\templates\reservation.html:135
+msgid "Menu"
+msgstr "Ruokalista"
+
+#: .\templates\contact.html:127 .\templates\index.html:123
+#: .\templates\index.html:478 .\templates\reservation.html:136
+#: .\templates\reservation.html:151
+msgid "Contact"
+msgstr "Yhteystiedot"
+
+#: .\templates\contact.html:142 .\templates\contact.html:146
+#: .\templates\reservation.html:155
+msgid "Contact Us"
+msgstr "Ota meihin yhteyttä"
+
+#: .\templates\contact.html:144 .\templates\index.html:114
+#: .\templates\reservation.html:127 .\templates\reservation.html:153
+msgid "Home"
+msgstr "Etusivu"
+
+#: .\templates\contact.html:193
+msgid "Contacts"
+msgstr "Yhteystiedot"
+
+#: .\templates\contact.html:194
+msgid "Send A Message"
+msgstr "Lähetä viesti"
+
+#: .\templates\contact.html:245
+msgid "Send Message"
+msgstr "Lähetä viesti"
+
+#: .\templates\index.html:136
+msgid "Welcome to"
+msgstr "Terevetuloa"
+
+#: .\templates\index.html:137
+msgid "Ravintola"
+msgstr "Ravintola"
+
+#: .\templates\index.html:137
+msgid "Mangal"
+msgstr "Mangal"
+
+#: .\templates\index.html:138
+msgid "Reserve Now"
+msgstr "Varaa nyt"
+
+#: .\templates\index.html:141
+msgid "Our menus"
+msgstr "valikot"
+
+#: .\templates\index.html:142
+msgid "See What's"
+msgstr "katso mika on"
+
+#: .\templates\index.html:142
+msgid "new"
+msgstr "uusi"
+
+#: .\templates\index.html:142
+msgid "today"
+msgstr "tänään"
+
+#: .\templates\index.html:143
+msgid "Check our menu"
+msgstr "Tarkista meidan ruokalista"
+
+#: .\templates\index.html:146
+msgid "Get ready"
+msgstr "Valmistaudu"
+
+#: .\templates\index.html:147
+msgid "to"
+msgstr "etta"
+
+#: .\templates\index.html:147
+msgid "Join"
+msgstr "yhdistaa"
+
+#: .\templates\index.html:147
+msgid "with us"
+msgstr "meidan kanssamme"
+
+#: .\templates\index.html:148
+msgid "Book A Table"
+msgstr "Varata poyta"
+
+#: .\templates\index.html:164
+msgid "Lunch"
+msgstr "Lounas"
+
+#: .\templates\index.html:175
+msgid "Please enjoy our delicious Ala-carte menu today"
+msgstr "Nauti herkullisesta Ala-carte-valikosta tänään"
+
+#: .\templates\index.html:216
+msgid "Our"
+msgstr "Meidan"
+
+#: .\templates\index.html:216
+msgid "Story"
+msgstr "Tarina"
+
+#: .\templates\index.html:219
+msgid ""
+"Restaurant Mangal is excellent choice when You want to eat delicious Nepal "
+"food. We have nepalese style food with some spices and ingredients which "
+"comes from Nepal. Specially spicy food served here are typical nepalese "
+"food. Some food which we have are enhanced versions of Indian food. We have "
+"good location, downtown in Seinäjoki. We can serve food to 40-50 customers "
+"at same time. We don't just serve delicious and tasty food, we serve "
+"friendly and professional customer service too."
+msgstr ""
+"Ravintola Mangal on erinomainen valinta silloin kun tahdotte syödä "
+"herkullista Nepalilaista ruokaa. Meillä tarjoillaan Nepalilaistyylistä "
+"ruokaa, johon sisältyy mausteita ja raaka-aineita joita yleensä käytetään "
+"Nepalilaisessa ruoanvalmistuksessa. Erityisesti mausteiset ruoat, joita "
+"tarjoilemme ovat tyypillisiä Nepalilaisia ruokia. Joitakin ruokia, joita "
+"meillä on, ovat Intialaisen ruuan parannettuja versioita. Meillä on erittäin "
+"hyvä sijainti, Seinäjoen ydinkeskustassa. Voimme tarjoilla ruokaa 40-50 "
+"asiakkaalle samanaikaisesti. Emme vain tarjoa herkullista ja maukasta "
+"ruokaa, tarjoamme myös ystävällistä ja ammattimaista asiakaspalvelua."
+
+#: .\templates\index.html:248 .\templates\index.html:340
+msgid "Special Menu"
+msgstr "Erityinen valikko"
+
+#: .\templates\index.html:249
+msgid "Special Promotion"
+msgstr "Erikoistarjous"
+
+#: .\templates\index.html:264
+msgid "Menu for 1"
+msgstr "valikko 1: lle"
+
+#: .\templates\index.html:279
+msgid "Menu for 2"
+msgstr "valikko 2: lle"
+
+#: .\templates\index.html:294
+msgid "Menu for 3"
+msgstr "valikko 3: lle"
+
+#: .\templates\index.html:309
+msgid "Menu for 4"
+msgstr "Valikko 4: lle"
+
+#: .\templates\index.html:333
+msgid "All"
+msgstr "Kaikki"
+
+#: .\templates\index.html:334
+msgid "Soup and Starter"
+msgstr "Keitto ja Alkiruoat"
+
+#: .\templates\index.html:335
+msgid "Chicken"
+msgstr "Kana"
+
+#: .\templates\index.html:336
+msgid "Lamb"
+msgstr "Lammas"
+
+#: .\templates\index.html:337
+msgid "Fish"
+msgstr "Kala"
+
+#: .\templates\index.html:338
+msgid "Vegetable"
+msgstr "Kasvis"
+
+#: .\templates\index.html:339
+msgid "Special Courses & Desserts"
+msgstr "Erikoiskurssit ja jälkiruoat"
+
+#: .\templates\index.html:341
+msgid "Child Menu & Drinks"
+msgstr "Lasten menu ja juomat"
+
+
+
+#: .\templates\reservation.html:182
+msgid "Reservation Form"
+msgstr "Varaus"
+
+#: .\templates\reservation.html:231
+msgid "BOOK MY TABLE"
+msgstr "Varaa pöytäni"
+
+#: .\templates\reservation.html:232
+msgid ""
+"Please submit your reservation detail & We'll contact you to confirm your "
+"booking"
+msgstr ""
+"Ole hyvä ja lähetä varaustiedot ja otamme sinuun yhteyttä vahvistaaksesi "
+"varauksesi"
+
+#: .\templates\reservation.html:241
+msgid "Reserve by Phone"
+msgstr "Varaa puhelimitse"
+
+#: .\templates\reservation.html:242
+msgid ""
+"We take reservations for lunch and dinner. To make a reservation, please "
+"call us at "
+msgstr ""
+"Varaamme lounaan ja illallisen. Voit tehdä varauksen soittamalla meille "
+"numeroon"
+
+#: .\templates\reservation.html:242
+msgid "during our opening hours."
+msgstr "aukioloaikoina."

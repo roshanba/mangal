@@ -1,0 +1,517 @@
+{% load static %}
+{% load i18n %}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+
+<!-- Mirrored from devitfamily.com/html/owl/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Jul 2017 23:24:19 GMT -->
+<head>
+    <!--====== USEFULL META ======-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--====== TITLE TAG ======-->
+    <title>{% block title %} Home {% endblock %}</title>
+
+    <!--====== FAVICON ICON =======-->
+    <link rel="shortcut icon" type="image/ico" href="{% static 'img/jembe.png' %}" />
+
+    <!--====== STYLESHEETS =======-->
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pogo-slider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'css/timepicker.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+
+    <!--====== MAIN STYLESHEETS ======-->
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+    <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+
+    <!--- PRELOADER -->
+    <div class="preeloader">
+        <div class="preloader-spinner"><i class="fa fa-cutlery"></i></div>
+    </div>
+
+    <!--SCROLL TO TOP-->
+    <a href="#home" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>
+
+    <!--START TOP AREA-->
+    <header class="top-area" id="home">
+        <div class="header-top-area">
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-6 col-sm-8">
+                            <div class="call-to-action">
+                                <p><i class="fa fa-envelope-o"></i>contactus@ravintolamangal.fi
+                                <i class="fa fa-phone"></i><a href="#">+358408678226</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-6 col-sm-4">
+                            <div class="book-table-popup">
+                                <a href="{% url 'reservation' %}">{% trans "Book a table" %}</a>
+                            </div>
+                            <div class="top-social-bookmark">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/ravintolamangal/"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/ravintolamangal/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="{% url 'changeLanguage' 'en' %}"><img src="{% static 'img/English.png' %}" ></a></li>
+                                    <li><a href="{% url 'changeLanguage' 'fi' %}"><img src="{% static 'img/Finnish.png' %}" ></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--MAINMENU AREA-->
+            <div class="mainmenu-area" id="mainmenu-area">
+                <div class="mainmenu-area-bg"></div>
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="" class="navbar-brand"><img src="{% static 'img/jembe.png' %}" alt="logo"></a>
+                            <a href="" class="navbar-brand white"><img src="{% static 'img/jembe.png' %}" alt="logo"></a>
+                        </div>
+                        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                            <div class="search-form-area">
+                                <div class="search-form-overlay"></div>
+                                <a class="search-form-trigger" href="#search-form">Search<span></span></a>
+                                <div id="search-form" class="search-form">
+                                    <form>
+                                        <input type="search" placeholder="Search...">
+                                    </form>
+                                </div>
+                            </div>
+                            <ul id="nav" class="nav navbar-nav cl-effect-11">
+                                <li class="active"><a class="at-drop-down" href="{% url 'home' %}">{% trans "Home" %}<i class=" fa fa-home"></i></a>
+                                    
+                                </li>
+                                <li><a href="#story">{% trans "about us" %}</a></li>
+                               
+                                    
+                                </li>
+                                <li><a href="{% url 'reservation' %}">{% trans "Reservation" %}</a></li>
+                                <li><a href="#menu">{% trans "Menu" %}</a></li>
+                                <li><a href="{% url 'contact' %}">{% trans "Contact" %}<i class="fa fa-telephone"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--END MAINMENU AREA END-->
+        </div>
+
+        <!--HHOME SLIDER AREA-->
+        <div class="slider-area">
+            <div class="pogoSlider">
+                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background:url({% static 'img/slider/1.png' %}) no-repeat scroll 0 0 / cover;">
+                    <h2 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="700">{% trans "Welcome to" %}</h2>
+                    <h1 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="1500"><span>{% trans "Ravintola" %}</span> {% trans "Mangal" %}</h1>
+                    <h3 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="2300"><a href="{% url 'reservation' %}">{% trans "Reserve Now" %}</a></h3>
+                </div>
+                <div class="pogoSlider-slide" data-transition="fade" style="background:url({% static 'img/slider/2.png' %}) no-repeat scroll 0 0 / cover;">
+                    <h2 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="700">{% trans "Our menus" %}</h2>
+                    <h1 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="1500">{% trans "See What's" %} <span>{% trans "new" %}</span> {% trans "today" %}</h1>
+                    <h3 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="2300"><a href="#menu">{% trans "Check our menu" %}</a></h3>
+                </div>
+                <div class="pogoSlider-slide" data-transition="fade" style="background:url({% static 'img/slider/3.png' %}) no-repeat scroll 0 0 / cover;">
+                    <h2 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="700">{% trans "Get ready" %}</h2>
+                    <h1 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="1500">{% trans "to" %} <span>{% trans "Join" %}</span> {% trans "with us" %}</h1>
+                    <h3 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="2300"><a href="{% url 'reservation' %}">{% trans "Book A Table" %}</a></h3>
+                </div>
+            </div>
+        </div>
+        <!--HOME SLIDER AREA END-->
+
+    </header>
+    <!--END TOP AREA-->
+
+    <!--TEAM AREA-->
+    <section class="team-area section-padding">
+        <div class="container wow fadeIn">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="area-title text-center">
+
+                        <h2>{{day}}'s {% trans "Lunch" %}</h2>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 team-slider" align="center">
+
+
+                    <div class="single-team-member text-center">
+                       {% if day == "Saturday" or day == "Sunday" %}
+                            <h4>{% trans "Please enjoy our delicious Ala-carte menu today" %} </h4>
+                        {% else %}
+                            
+                            <h2>📍Koulukatu</h2>
+                         {% for obj in menusa %}
+                            {% if obj.type == "lunch" and obj.location == "Koulukatu" and obj.category == day %}
+
+                            <p>{{ obj.name }}</p>
+                        
+                            {% endif%}
+                         {% endfor%}
+                        
+                       
+                    </div>
+
+                   <!--  Location Ideapark -->
+                    <div class="single-team-member text-center">
+                        
+                        <h2>📍Ideapark</h2>
+                         {% for obj in menusa %}
+                            {% if obj.type == "lunch" and obj.location == "Ideapark" and obj.category == day %}
+
+                            <p>{{ obj.name }}</p>
+                        
+                            {% endif%}
+                         {% endfor%}
+                    </div>
+                    {% endif%}
+                    <!---Location ends here -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--TEAM AREA END-->
+
+    <!--ABOUT AREA-->
+    <section class="about-area section-padding" id="story">
+        <div class="container wow fadeIn">
+            <div class="row" >
+                <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
+                    <div class="area-title">
+                        <h2 >{% trans "Our" %}<span>{% trans "Story" %}</span></h2>
+                    </div>
+                    <div class="about-content">
+                        <p>{% trans "Restaurant Mangal is excellent choice when You want to eat delicious Nepal food. We have nepalese style food with some spices and ingredients which comes from Nepal. Specially spicy food served here are typical nepalese food. Some food which we have are enhanced versions of Indian food. We have good location, downtown in Seinäjoki. We can serve food to 40-50 customers at same time. We don't just serve delicious and tasty food, we serve friendly and professional customer service too." %}</p>
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                            <div class="about-img">
+                                <img src="{% static 'img/slider/4.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                            <div class="about-img">
+                                <img src="{% static 'img/slider/5.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ABOUT AREA END-->
+
+    <!--PROMOTIONS AREA-->
+    <section class="promotions-area section-padding">
+        <div class="promotion-area-bg"></div>
+        <div class="container wow fadeIn">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="area-title text-center">
+                        <h2>{% trans "Special Menu" %}</h2>
+                        <h3>{% trans "Special Promotion" %}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single-promotions text-center">
+                        <div class="promotions-img">
+                            <img src="{% static 'img/promotions/promo_1.jpg' %}" alt="">
+                            <div class="pakage-rate">
+                                <p></p>
+                                <p><span>€26,90</span></p>
+                            </div>
+                        </div>
+                        <div class="promotions-details">
+                            <h4>{% trans "Menu for 1" %}</h4>
+                            <a href="{% url 'reservation' %}" class="read-more">Reserve now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single-promotions text-center">
+                        <div class="promotions-img">
+                            <img src="{% static 'img/promotions/promo_2.jpg' %}" alt="">
+                            <div class="pakage-rate">
+                                <p></p>
+                                <p><span>€49,90</span></p>
+                            </div>
+                        </div>
+                        <div class="promotions-details">
+                            <h4>{% trans "Menu for 2" %}</h4>
+                            <a href="{% url 'reservation' %}" class="read-more">Reserve now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single-promotions text-center">
+                        <div class="promotions-img">
+                            <img src="{% static 'img/promotions/promo_3.jpg' %}" alt="">
+                            <div class="pakage-rate">
+                                <p></p>
+                                <p><span>€74,90</span></p>
+                            </div>
+                        </div>
+                        <div class="promotions-details">
+                            <h4>{% trans "Menu for 3" %}</h4>
+                            <a href="{% url 'reservation' %}" class="read-more">Reserve now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single-promotions text-center">
+                        <div class="promotions-img">
+                            <img src="{% static 'img/promotions/promo_3.jpg' %}" alt="">
+                            <div class="pakage-rate">
+                                <p></p>
+                                <p><span>€99,90</span></p>
+                            </div>
+                        </div>
+                        <div class="promotions-details">
+                            <h4>{% trans "Menu for 4" %}</h4>
+                            <a href="{% url 'reservation' %}" class="read-more">Reserve now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PROMOTIONS AREA END-->
+
+    <!--MENUS AREA-->
+    <section class="menus-area section-padding" id="menu">
+        <div class="container wow fadeIn">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="area-title text-center">
+                        <h2>{% trans "Menu" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="food-menu-list-menu">
+                        <ul>
+                            <li class="filter active" data-filter="all">{% trans "All" %}</li>
+                            <li class="filter" data-filter=".soup">{% trans "Soup and Starter" %}</li>
+                            <li class="filter" data-filter=".kana">{% trans "Chicken" %}</li>
+                            <li class="filter" data-filter=".lamb">{% trans "Lamb" %}</li>
+                            <li class="filter" data-filter=".kala">{% trans "Fish" %}</li>
+                            <li class="filter" data-filter=".vege">{% trans "Vegetable" %}</li>
+                            <li class="filter" data-filter=".dessert">{% trans "Special Courses & Desserts" %}</li>
+                            <li class="filter" data-filter=".special">{% trans "Special Menu" %}</li>
+                            <li class="filter" data-filter=".child">{% trans "Child Menu & Drinks" %}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row food-menu-list">
+            {% for obj in menusa %}
+
+            
+                {% if obj.category == "soup" %}
+                <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu soup">
+                    <div class="food-menu-img">
+                    <a class="menu-popup" data-effect="mfp-zoom-out"><img  alt=""></a>
+                </div>
+                <div class="food-menu-details">
+                    <h5>{{ obj.description }}</h5>
+                    <h4>{{ obj.id }}.{{ obj.name }}</h4>
+                    <p class="menu-price">{{ obj.price }}</p>
+                </div>
+            </div>
+                 
+
+        
+                {% elif obj.category == "chicken" %}
+                <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu kana">
+                    <div class="food-menu-img">
+                    <a class="menu-popup" data-effect="mfp-zoom-out"><img  alt=""></a>
+                </div>
+                <div class="food-menu-details">
+                    <h5>{{ obj.description }}</h5>
+                    <h4>{{ obj.id }}.{{ obj.name }}</h4>
+                    <p class="menu-price">{{ obj.price }}</p>
+                </div>
+                </div>
+                {% elif obj.category == "lamb" %}
+                <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu lamb">
+                    <div class="food-menu-img">
+                    <a href="{{ obj.get_absolute_url }}" class="menu-popup" data-effect="mfp-zoom-out"><img src="{{ obj.picture.url }}" alt=""></a>
+                </div>
+                <div class="food-menu-details">
+                    <h5>{{ obj.description }}</h5>
+                    <h4>{{ obj.id }}.{{ obj.name }}</h4>
+                    <p class="menu-price">{{ obj.price }}</p>
+                </div>
+                </div>
+                {% elif obj.category == "fish" %}
+                <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu kala">
+                    <div class="food-menu-img">
+                    <a class="menu-popup" data-effect="mfp-zoom-out"><img  alt=""></a>
+                </div>
+                <div class="food-menu-details">
+                    <h5>{{ obj.description }}</h5>
+                    <h4>{{ obj.id }}.{{ obj.name }}</h4>
+                    <p class="menu-price">{{ obj.price }}</p>
+                </div>
+                </div>
+                {% elif obj.category == "vegetable" %}
+                <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu vege">
+                    <div class="food-menu-img">
+                    <a class="menu-popup" data-effect="mfp-zoom-out"><img  alt=""></a>
+                </div>
+                <div class="food-menu-details">
+                    <h5>{{ obj.description }}</h5>
+                    <h4>{{ obj.id }}.{{ obj.name }}</h4>
+                    <p class="menu-price">{{ obj.price }}</p>
+                </div>
+                </div>
+                {% elif obj.category == "special" %}
+                <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu special">
+                    <div class="food-menu-img">
+                    <a class="menu-popup" data-effect="mfp-zoom-out"><img  alt=""></a>
+                </div>
+                <div class="food-menu-details">
+                    <h5>{{ obj.description }}</h5>
+                    <h4>{{ obj.id }}.{{ obj.name }}</h4>
+                    <p class="menu-price">{{ obj.price }}</p>
+                </div>
+                </div>
+                {% elif obj.category == "child" %}
+                <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu child">
+                    <div class="food-menu-img">
+                    <a class="menu-popup" data-effect="mfp-zoom-out"><img  alt=""></a>
+                </div>
+                <div class="food-menu-details">
+                    <h5>{{ obj.description }}</h5>
+                    <h4>{{ obj.id }}.{{ obj.name }}</h4>
+                    <p class="menu-price">{{ obj.price }}</p>
+                </div>
+                </div>
+
+        
+                
+               {% endif %} 
+            {% endfor %}
+    </div>
+    </div>
+</div>
+    </section>
+    <!--MENUS AREA END-->
+
+   
+
+    
+
+   
+    <!--FOOER AREA-->
+    <div class="footer-area">
+        <div class="container wow fadeIn">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="footer-top section-padding text-center">
+                        <div class="footer-logo">
+                            <a href="#"><img src="{% static 'img/jembe.png' %}" alt=""></a>
+                        </div>
+                        <div class="footer-address">
+                            <p>Koulukatu 5, 60100, Seinäjoki</p>
+                            <p>Suupohjantie 57, 60320 Seinäjoki</p>
+                            <p><a href="mailto:email">contactus@ravintolamangal.fi</a></p>
+                            <p><a href="callto:call">+358408678226</a></p>
+                        </div>
+                        <div class="footer-social-bookmark">
+                            <ul>
+                                <li><a href="https://fi-fi.facebook.com/ravintolamangal/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/ravintolamangal/?hl=en"><i class="fa fa-instagram"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privicy Policy</a></li>
+                            <li><a href="#">SiteMap</a></li>
+                            <li><a href="{% url 'contact' %}">{% trans "Contact" %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="footer-copyright">
+                        <p>&copy; 2017 <a href="#">Ravintola Mangal</a> All Right Reserved. Designed by <a href="">Suman Dahal</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOER AREA END-->
+
+
+    <!--====== SCRIPTS JS ======-->
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+
+    <!--====== PLUGINS JS ======-->
+    <script src="{% static 'js/vendor/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-migrate-1.2.1.min.js' %}"></script>
+    <script src="{% static 'js/jquery.pogo-slider.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.mixitup.min.js' %}"></script>
+    <script src="{% static 'js/spectragram.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/datepicker.min.js' %}"></script>
+    <script src="{% static 'js/timepicker.min.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/contact-form.js' %}"></script>
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+
+    <!--===== ACTIVE JS=====-->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
